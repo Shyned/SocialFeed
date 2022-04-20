@@ -12,6 +12,9 @@ const DisplayWall= (props) => {
         <       div>
                     <h3>{el.name}</h3>
                     <p>{el.entry}</p>
+                    <button>Like</button>
+                    <button>dislike</button>
+
                 </div>
             );
        })}
