@@ -1,6 +1,8 @@
 import React, { useState,useEffect } from 'react';
 import DisplayWall from './Components/DisplayWall/DisplayWall';
 import AddPost from './Components/AddPost/AddPost';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 
 
 function App() {
@@ -12,16 +14,27 @@ function App() {
     setPosts(tempPost);
   }
 // pop up alert to let you know that person.name has a new post
-useEffect(()=>{
-  alert(posts[0].name + " has a new post")
-},[posts])
+// useEffect(()=>{
+//   alert(posts[0].name + " has a new post")
+// },[posts])
    
   return (
    <div>
-     <h1>Soical<>feed</></h1>
-      <AddPost addNewPost = {addNewPost}/>
-       {/* child function to pass down new posts to be displayed on the wall */}
-      <DisplayWall posts = {posts}/>
+    <div className='header'>
+      <h1 >
+        Soical<div className='mute-color'>feed</div>
+      </h1>
+    </div>
+     {/* container around wall and post area */}
+      <div className='content-area'>
+        <div className='new-post'>
+          <AddPost addNewPost = {addNewPost}/>
+        </div>
+        <div className='my-wall'>
+          {/* child function to pass down new posts to be displayed on the wall */}
+          <DisplayWall posts = {posts}/>
+        </div>
+      </div>
    </div>
   );
 }
