@@ -4,8 +4,11 @@
 }
 .header{
     background-color: white;
+    height: 100px;
 }
-
+h1{
+    justify-self: auto;
+}
 .new-post{
     display: flex;
     flex-direction: column;
@@ -25,3 +28,4 @@
      margin-top: 20px;
      box-shadow: 1px -1px 12px black;
  }
+

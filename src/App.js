@@ -21,8 +21,8 @@ function App() {
   return (
    <div>
     <div className='header'>
-      <h1 >
-        Soical<div className='mute-color'>feed</div>
+      <h1 style={{ display:"flex", fontWeight:"bolder" }}>
+        Soical<div style={{ color:"grey"}}>feed</div>
       </h1>
     </div>
      {/* container around wall and post area */}

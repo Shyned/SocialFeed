@@ -18,12 +18,12 @@ const AddPost = (props) => {
 
     return ( 
 // calls function to stop page reload when create is clicked
-        <form onSubmit={handleSubmit}>
-            <label>Name </label>
+        <form onSubmit={handleSubmit} >
+            <label style={{ color:"grey" }}>Name </label>
              {/*event target value allows user to input new value */}
-            <input type="text" value={name} onChange={(event) => setName(event.target.value)}  />
-            <label>Post </label> 
-            <input type="text"  value={entry} onChange={(event) => setEntry(event.target.value)}/>
+            <input type="text" style={{ width:"50%" }} value={name} onChange={(event) => setName(event.target.value)}  />
+            <label style={{ color:"grey" }}>Post </label> 
+            <input type="text"  style={{ width:"50%", height:"200px"}} value={entry} onChange={(event) => setEntry(event.target.value)}/>
             <button type='submit'> Create </button>
         </form>
 
