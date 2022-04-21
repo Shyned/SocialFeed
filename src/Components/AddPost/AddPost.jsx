@@ -5,15 +5,15 @@ import React, { useState } from 'react';
 const AddPost = (props) => {
 
     const [name,setName] =useState('')
-    const [post,setPost]=useState('')
+    const [entry,setEntry]=useState('')
 
 
     // function to handle page reloads
     function handleSubmit(event){
         event.preventDefault();
-        let newPost = {name: name,
-        post: post}
+        let newPost = {name: name,entry: entry}
         console.log(newPost)
+        props.addNewPost( newPost)
     }
 
     return ( 
@@ -21,9 +21,9 @@ const AddPost = (props) => {
         <form onSubmit={handleSubmit}>
             <label>Name </label>
              {/*event target value allows user to input new value */}
-            <input type="text" name="Name" value={name} onChange={(event) => setName(event.target.value)}/>
+            <input type="text" value={name} onChange={(event) => setName(event.target.value)}  />
             <label>Post </label> 
-            <input type="text" name="Post" value={post} onChange={(event) => setPost(event.target.value)}/>
+            <input type="text"  value={entry} onChange={(event) => setEntry(event.target.value)}/>
             <button type='submit'> Create </button>
         </form>
 
