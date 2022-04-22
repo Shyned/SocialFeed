@@ -1,31 +1,56 @@
-.content-area{
-    border-top: 1px solid black;
-    
-}
+
 .header{
     background-color: white;
     height: 100px;
+    align-content: center;
 }
-h1{
-    justify-self: auto;
+.content-area{
+    border-top: 1px solid grey;
+    width: 100%;
+    justify-content: center;
+    
 }
 .new-post{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid grey;
     border-radius: 2px;
     background-color: white;
     padding-top: 20px;
     margin-top: 20px;
     box-shadow: 1px 1px 12px black;
+    border-radius: 27px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
  .my-wall{
-     border:1px solid black ;
-     border-radius: 2px;
+     border:1px solid grey ;
+     border-radius: 27px;
      background-color: white;
      padding-top: 20px;
      margin-top: 20px;
      box-shadow: 1px -1px 12px black;
+     width: 60%;
+     margin-left: auto;
+    margin-right: auto;
+    padding: auto;
  }
 
+.like-dislike{
+    background-color: rgba(240, 248, 255, 0);
+    border: none;}
+.icon-tabler {
+    border: none;
+    background-color: #ffffff00;
+    color: grey;
+}
+
+.icon-tabler:hover{
+transition: all .2s ease-in-out; 
+transform: scale(1.5); 
+}
+
+.icon-tabler:active{
+    fill: rgb(2, 255, 2);
+}

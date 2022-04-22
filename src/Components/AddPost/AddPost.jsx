@@ -24,7 +24,7 @@ const AddPost = (props) => {
             <input type="text" style={{ width:"50%" }} value={name} onChange={(event) => setName(event.target.value)}  />
             <label style={{ color:"grey" }}>Post </label> 
             <input type="text"  style={{ width:"50%", height:"200px"}} value={entry} onChange={(event) => setEntry(event.target.value)}/>
-            <button type='submit'> Create </button>
+            <button type='submit' className='submit-button'> Create </button>
         </form>
 
      );
